@@ -1,0 +1,214 @@
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: black;
+  width: 100%;
+}
+
+#about_personal {
+  padding: 2rem 1rem;
+
+  width: 100%;
+}
+
+#contact {
+  padding: 100px;
+
+  width: 100%;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: black;
+}
+h1 {
+  color: greenyellow;
+  text-align: center;
+}
+.icon {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  float: center;
+  color: rgb(158, 158, 158);
+  box-sizing: border-box;
+  align-items: center;
+  text-align: center;
+}
+.fab fa-whatsapp {
+  color: brown;
+}
+.icon a i {
+  margin: 0px;
+}
+.icon a {
+  color: gray;
+}
+.icon h4 {
+  margin: 0px;
+}
+.icon h4 a:hover {
+  color: blue;
+}
+
+a i:hover {
+  background-color: whitesmoke;
+  border-radius: 50px;
+}
+a i {
+  padding: 10px 20px;
+}
+h4 {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+/* amp section 3d */
+.amp-box {
+  position: relative;
+  background-color: #6c757d;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.amp-box::before {
+  content: "Marshall";
+  position: absolute;
+  color: #fff;
+  font-family: "algerian";
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.amp-box:hover::before {
+  opacity: 1;
+}
+
+.amp-box::after {
+  content: "JCM900";
+  position: absolute;
+  color: #fff;
+  font-family: "algerian";
+  font-size: 2.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.amp-box:hover::after {
+  opacity: 1;
+}
+
+.amp1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.amp-box:hover .amp1 {
+  top: 10px;
+  opacity: 1;
+}
+
+.jcm900-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -40%, 100px);
+  max-width: 240px;
+  transition: 0.5s;
+}
+
+.amp-box:hover .jcm900-img {
+  transform: translate3d(-50%, -40%, 100px) scale(1.2);
+}
+
+/* amp combo section */
+.cmb-box {
+  position: relative;
+  background-color: #6c757d;
+  border-radius: 10px;
+  height: 400px;
+}
+
+.cmb-box::before {
+  content: "Marshallcmb";
+  position: absolute;
+  color: #fff;
+  font-family: "algerian";
+  font-size: 2.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cmb-box:hover::after {
+  opacity: 1;
+}
+
+.cmb-box::after {
+  content: "Marshallcmb";
+  position: absolute;
+  color: #fff;
+  font-family: "algerian";
+  font-size: 2.3em;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.cmb-box:hover::after {
+  opacity: 1;
+}
+
+.marshallcmb2 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translate(-50, 0);
+  transition: 0.5s;
+}
+
+.cmb-box:hover .marshallcmb2 {
+  top: 10px;
+  opacity: 1;
+}
+
+.marshallcmb-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-width: 240px;
+  transition: 0.5s;
+}
+
+.cmb-box:hover .marshallcmb-img {
+  transform: translate(-50%, 0);
+}
